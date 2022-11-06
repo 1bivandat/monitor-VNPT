@@ -1,4 +1,4 @@
-version: "3.9"
+version: "3.3"
 services:
   prometheus:
     image: prom/prometheus:latest
@@ -48,6 +48,7 @@ services:
       - '9093:9093'
     networks:
       - monitor-net
+
   grafana:
     image: grafana/grafana:latest
     container_name: grafana
@@ -80,4 +81,4 @@ networks:
 
 volumes:
   prometheus_data: {}
-  grafana_data: {} 
+  grafana_data: {}
