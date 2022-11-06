@@ -28,3 +28,10 @@ scrape_configs:
 
     static_configs:
       - targets: ["192.168.21.128:9100"]
+        #labels:
+          #server: "DBMaster01"
+          #ip: "192.168.1.21"
+      #- targets: ["192.168.1.22:9100"]
+        #labels:
+          #server: "DBMaster02"
+          #ip: "192.168.1.22"
